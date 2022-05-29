@@ -1,0 +1,34 @@
+#bb
+import webbrowser as wb
+#banco de dados
+
+from http import server
+
+for n in range(30):
+    print("carregando sistema")
+
+print("iniciado serverconfig.exe")
+server_name = input("Nome do Servidor:")
+server_pass = input("senha do servidor:")
+server_ip = int(input("coloque o ip (exemplo 123.4567.890):"))
+print("program ended")
+
+print("carregando server_info.exe")
+server = input("agora coloque suas informações que deseja guardar:")
+print("sucesso suas informações foram criptografadas")
+print("program ended")
+
+print("iniciando cmds.exe")
+
+print("abrindo lista de comandos:")
+wb.open("https://www.mediafire.com/file/muyc1gmsi6g5bgc/cmds.txt/file")
+cmd = input("insira seu comando aqui:")
+teste_pass = 0
+teste_ip = 0
+if cmd == "dv" or "Dv" or "DV" or "dV":
+    teste_pass = input("se deseja suas  informações digite a senha do servidor")
+    print("verificando")
+    if teste_pass == server_pass:
+        print("ok")
+        teste_ip = input("agora o ip:")
+        print("aqui seus dados:",server)
